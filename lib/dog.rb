@@ -71,4 +71,8 @@ class Dog
         row =  DB[:conn].execute(sql, name).flatten
         new_from_db(row)
       end
+
+      def update(instance)
+          binding.pry
+      end  
 end
